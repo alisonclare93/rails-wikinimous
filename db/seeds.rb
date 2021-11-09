@@ -8,6 +8,8 @@
 10.times do
   article = Article.create(
     title:    Faker::Marketing.buzzwords,
-    content:  Faker::Quotes::Shakespeare.as_you_like_it_quote,
+    subheading: Faker::Quotes::Shakespeare.as_you_like_it_quote,
+    image_url: Faker::LoremFlickr.image,
+    content:  Faker::Lorem.paragraphs(number: 8),
   )
 end
