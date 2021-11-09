@@ -10,6 +10,6 @@
     title:    Faker::Marketing.buzzwords,
     subheading: Faker::Quotes::Shakespeare.as_you_like_it_quote,
     image_url: Faker::LoremFlickr.image,
-    content:  Faker::Lorem.paragraphs(number: 8),
+    content:  Faker::Hipster.paragraph(sentence_count: 25),
   )
 end
