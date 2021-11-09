@@ -7,3 +7,6 @@
 <img src="<%= @article.image_url %>" alt="">
 
 <p> <%= @article.content %> </p>
+
+<%= link_to 'Edit this article', edit_article_path %>
+<%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Do you really want to?' } %>
